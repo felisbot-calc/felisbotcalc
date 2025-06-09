@@ -8,7 +8,7 @@ from discord.ext import commands
 import webserver
 
 load_dotenv()
-token = os.environ('DISCORD_TOKEN')
+token = os.environ.get('DISCORD_TOKEN')
 
 handler = logging.FileHandler(filename = 'discord.log', encoding = 'utf-8', mode = 'w')
 intents = discord.Intents.default()
